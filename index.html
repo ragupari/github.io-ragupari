@@ -6,11 +6,12 @@
     <title>My Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .sidebar {
-            background-color: #f8f9fa;
-            height: 100vh;
-            position: sticky;
-            top: 0;
+        @media (min-width: 768px) {
+            .sidebar {
+                height: 100vh;
+                position: sticky;
+                top: 0;
+            }
         }
         .profile-img {
             width: 150px;
@@ -21,17 +22,17 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row flex-column flex-md-row">
             <!-- Sidebar -->
-            <div class="col-md-3 col-lg-2 sidebar p-3">
-                <img src="https://via.placeholder.com/150" alt="Profile Picture" class="img-fluid rounded-circle profile-img mb-3">
-                <h2>John Doe</h2>
-                <p>Web Developer</p>
-                <h5>Contact</h5>
-                <p>Email: john@example.com<br>
-                Phone: (123) 456-7890<br>
-                Location: New York, NY</p>
-                <h5>Skills</h5>
+            <div class="col-md-3 col-lg-2 bg-light p-3 sidebar">
+                <img src="avatar2.png" alt="Profile Picture" class="img-fluid rounded-circle profile-img mb-3 d-block mx-auto">
+                <h2 class="text-center">Parishith Ragumar</h2>
+                <p class="text-center">Computer Science and Engineering UG</p>
+                <p class="text-center">@University of Moratuwa</p>
+                <h5 class="mt-4">Contact</h5>
+                <p>Email: pariunimora@gmail.com<br>
+                Location: Jaffna, Sri Lanka</p>
+                <h5 class="mt-4">Skills</h5>
                 <ul class="list-unstyled">
                     <li>HTML/CSS</li>
                     <li>JavaScript</li>
@@ -62,25 +63,22 @@
                     <!-- Home Tab -->
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <div class="row mb-4">
-                            <div class="col-md-8">
+                            <div class="col-12">
                                 <h2>Welcome to My Portfolio</h2>
-                                <p>I'm John Doe, a passionate web developer with 5 years of experience in creating responsive and user-friendly websites. My expertise includes:</p>
+                                <p>I'm Parishith Ragumar, a passionate Computer Science and Engineering undergraduate at the University of Moratuwa. My areas of interest include:</p>
                                 <ul>
-                                    <li>Front-end development with HTML, CSS, and JavaScript</li>
-                                    <li>React and Vue.js for building dynamic user interfaces</li>
-                                    <li>Back-end development with Node.js and Express</li>
-                                    <li>Database management using MongoDB and MySQL</li>
+                                    <li>Web development with HTML, CSS, and JavaScript</li>
+                                    <li>Building dynamic user interfaces with React</li>
+                                    <li>Back-end development with Node.js</li>
+                                    <li>Exploring new technologies and frameworks</li>
                                 </ul>
-                                <p>I'm always eager to learn new technologies and take on challenging projects. Feel free to explore my work and get in touch if you'd like to collaborate!</p>
-                            </div>
-                            <div class="col-md-4">
-                                <img src="https://via.placeholder.com/300" alt="John Doe" class="img-fluid rounded">
+                                <p>I'm always eager to learn and take on challenging projects. Feel free to explore my work and get in touch if you'd like to collaborate!</p>
                             </div>
                         </div>
                         <h3 class="mt-4">Featured Projects</h3>
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <div class="card">
+                                <div class="card h-100">
                                     <div class="card-body">
                                         <h5 class="card-title">E-commerce Website</h5>
                                         <p class="card-text">A full-stack e-commerce platform built with React and Node.js</p>
@@ -88,7 +86,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <div class="card">
+                                <div class="card h-100">
                                     <div class="card-body">
                                         <h5 class="card-title">Weather App</h5>
                                         <p class="card-text">A weather application using OpenWeatherMap API and React</p>
@@ -97,10 +95,10 @@
                             </div>
                         </div>
 
-                        <h3 class="mt-4">Recent Coursework</h3>
+                        <h3 class="mt-4">Certifications</h3>
                         <ul class="list-group">
-                            <li class="list-group-item">Advanced Web Development - Udacity (2023)</li>
-                            <li class="list-group-item">Data Structures and Algorithms - Coursera (2022)</li>
+                            <li class="list-group-item">Data Structures and Algorithms - University of Moratuwa (2023)</li>
+                            <li class="list-group-item">Web Development Fundamentals - Coursera (2022)</li>
                         </ul>
                     </div>
 
@@ -109,7 +107,7 @@
                         <h2>My Projects</h2>
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <div class="card">
+                                <div class="card h-100">
                                     <div class="card-body">
                                         <h5 class="card-title">E-commerce Website</h5>
                                         <p class="card-text">A full-stack e-commerce platform built with React and Node.js</p>
@@ -118,7 +116,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <div class="card">
+                                <div class="card h-100">
                                     <div class="card-body">
                                         <h5 class="card-title">Weather App</h5>
                                         <p class="card-text">A weather application using OpenWeatherMap API and React</p>
@@ -127,7 +125,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <div class="card">
+                                <div class="card h-100">
                                     <div class="card-body">
                                         <h5 class="card-title">Task Manager</h5>
                                         <p class="card-text">A task management application built with React and Firebase</p>
@@ -136,7 +134,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <div class="card">
+                                <div class="card h-100">
                                     <div class="card-body">
                                         <h5 class="card-title">Portfolio Website</h5>
                                         <p class="card-text">A personal portfolio website built with HTML, CSS, and JavaScript</p>
@@ -150,26 +148,48 @@
                     <!-- Coursework Tab -->
                     <div class="tab-pane fade" id="coursework" role="tabpanel" aria-labelledby="coursework-tab">
                         <h2>My Coursework</h2>
-                        <div class="list-group">
-                            <div class="list-group-item">
-                                <h5 class="mb-1">Advanced Web Development</h5>
-                                <p class="mb-1">Udacity - 2023</p>
-                                <small>Learned advanced React techniques, server-side rendering, and performance optimization.</small>
+                        <div class="accordion" id="courseworkAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="semester1Header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#semester1" aria-expanded="true" aria-controls="semester1">
+                                        Semester 1
+                                    </button>
+                                </h2>
+                                <div id="semester1" class="accordion-collapse collapse" aria-labelledby="semester1Header" data-bs-parent="#courseworkAccordion">
+                                    <div class="accordion-body">
+                                        <div class="list-group">
+                                            <div class="list-group-item">
+                                                <h5 class="mb-1">Introduction to Computer Science</h5>
+                                                <small>Learned basic programming concepts, algorithms, and data structures.</small>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <h5 class="mb-1">Mathematics for Computing</h5>
+                                                <small>Studied discrete mathematics and linear algebra fundamentals.</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="list-group-item">
-                                <h5 class="mb-1">Data Structures and Algorithms</h5>
-                                <p class="mb-1">Coursera - 2022</p>
-                                <small>Studied fundamental data structures and algorithms, improving problem-solving skills.</small>
-                            </div>
-                            <div class="list-group-item">
-                                <h5 class="mb-1">Machine Learning Fundamentals</h5>
-                                <p class="mb-1">edX - 2022</p>
-                                <small>Explored basic machine learning concepts and implemented simple models.</small>
-                            </div>
-                            <div class="list-group-item">
-                                <h5 class="mb-1">iOS App Development with Swift</h5>
-                                <p class="mb-1">Udacity - 2021</p>
-                                <small>Developed iOS applications using Swift and Xcode, focusing on UI/UX design principles.</small>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="semester2Header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#semester2" aria-expanded="false" aria-controls="semester2">
+                                        Semester 2
+                                    </button>
+                                </h2>
+                                <div id="semester2" class="accordion-collapse collapse" aria-labelledby="semester2Header" data-bs-parent="#courseworkAccordion">
+                                    <div class="accordion-body">
+                                        <div class="list-group">
+                                            <div class="list-group-item">
+                                                <h5 class="mb-1">Data Structures and Algorithms</h5>
+                                                <small>Studied advanced data structures and algorithms, focusing on problem-solving skills.</small>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <h5 class="mb-1">Object-Oriented Programming</h5>
+                                                <small>Learned OOP concepts and their implementation in Java.</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
